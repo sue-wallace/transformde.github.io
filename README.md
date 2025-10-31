@@ -1,4 +1,6 @@
-[#1. Learning Pathways](#1.-Learning-Pathways)
+COntents
+
+[1. Learning Pathways](#1.-Learning-Pathways)
 ## 1. Learning Pathways
 
 ### Azure certifications for data engineers
