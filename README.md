@@ -1,7 +1,9 @@
 COntents
 
 [1. Learning Pathways](#1.-Learning-Pathways)
+
 [2. Useful resources](#2.-Useful-resources)
+
 ## 1. Learning Pathways
 
 ### Azure certifications for data engineers
