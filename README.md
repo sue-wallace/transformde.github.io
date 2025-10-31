@@ -1,5 +1,7 @@
 ## Contents
 
+test vs code commit 
+
 [1. Learning Pathways](#1.-Learning-Pathways)
 
 [2. Useful resources](#2.-Useful-resources)
@@ -21,6 +23,8 @@
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
 ## 2. Useful resources
+
+* The Scrum Guide
 
 ######################################################################################################
 
