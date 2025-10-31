@@ -20,7 +20,7 @@
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
-## 1. Useful resources
+## 2. Useful resources
 
 ######################################################################################################
 
