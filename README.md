@@ -1,8 +1,12 @@
 # Markdown Cheat Sheet
 
+this before
+
 [Custom foo description](#foo)
 
 # Foo
+
+this after
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
