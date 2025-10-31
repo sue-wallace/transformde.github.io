@@ -1,6 +1,7 @@
 COntents
 
 [1. Learning Pathways](#1.-Learning-Pathways)
+[2. Useful resources](#2.-Useful-resources)
 ## 1. Learning Pathways
 
 ### Azure certifications for data engineers
@@ -17,7 +18,7 @@ COntents
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
-
+## 1. Useful resources
 
 ######################################################################################################
 
