@@ -1,3 +1,14 @@
+[Learning Pathways](#Learning-Pathways)
+# Learning Pathways
+
+Azure certifications for data engineers
+
+* 
+
+
+
+######################################################################################################
+
 # Markdown Cheat Sheet
 
 Test commit
