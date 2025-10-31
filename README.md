@@ -8,6 +8,14 @@
 * [Azure AI Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)
 * [Azure AI Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification)
 
+### Databricks certifications for data engineers
+
+* [Data Engineer Associate](https://www.databricks.com/learn/certification/data-engineer-associate)
+
+* [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
+
+* [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
+
 
 
 ######################################################################################################
