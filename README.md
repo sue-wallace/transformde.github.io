@@ -35,3 +35,5 @@ By layering data transformations in this way, the Medallion Architecture promote
 
 [Microsoft: What is the medallion lakehouse architecture?](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion)
 
+### Data lakes
+
