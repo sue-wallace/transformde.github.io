@@ -11,9 +11,7 @@
 ### Databricks certifications for data engineers
 
 * [Data Engineer Associate](https://www.databricks.com/learn/certification/data-engineer-associate)
-
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
-
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
 
