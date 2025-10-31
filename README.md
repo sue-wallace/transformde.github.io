@@ -22,6 +22,8 @@
 
 ## 2. Useful resources
 
+* [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+
 ######################################################################################################
 
 # Markdown Cheat Sheet
