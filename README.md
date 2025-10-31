@@ -1,5 +1,5 @@
 ## Contents
-testing vs
+
 [1. Learning Pathways](#1.-Learning-Pathways)
 
 [2. Useful resources](#2.-Useful-resources)
