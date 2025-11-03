@@ -144,7 +144,7 @@ For example:
 
 *Avro* and *JSON* are often better suited for streaming or schema evolution use cases.
 
-*Delta* files add transactional reliability and version control on top of data lakes.
+*Delta* files add transactional reliability and version control on top of data lakes. The data aspect of delta files are stored in parquet format. 
 
 Delta (often called Delta Lake) is a modern open-source storage layer  that brings reliability, consistency, and performance to data lakes. It essentially upgrades a traditional data lake (like one on Azure Data Lake Storage) into a transactional, ACID-compliant data lakehouse. 
 
