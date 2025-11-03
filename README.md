@@ -54,11 +54,11 @@ We dont have admin rights on our devices but any apps that you will need should 
 
 ### Technology
 
-#### Databricks
+Databricks
 
-#### Azure Synapse Analytics and ADF
+Azure Synapse Analytics and ADF
 
-#### Commonly used Azure components
+Commonly used Azure components
 
 ## x. Software development best practice
 
