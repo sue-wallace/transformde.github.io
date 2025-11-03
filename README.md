@@ -197,6 +197,13 @@ You can also store error metadata (pipeline name, activity, error message, times
 
 ### Partitioning
 
+Partitioning is an important concept in data engineering as it directly affects query performance, scalability, and cost in big data systems.
+
+Partitioning means dividing a large dataset into smaller, more manageable chunks (called partitions) based on the value of one or more columns — typically something like date, region, or customer_id.
+Instead of storing all records in one massive file or table, the data is split across directories or files that correspond to those partition values.
+
+Partitioing also means that distrobuted systems like Spark can handle the data more effectively as each partition can be processed in parallel. You can also easily drop, reload, or archive specific partitions without touching the rest of the data.
+
 ### ETL/ELT
 
 ### ACID Transactions
