@@ -41,9 +41,20 @@ Could ask the team to write a short bio each here.
 
 Add in any useful resources for new data engineering starters here.
 
+
+### Languages
+
 As a data engineer you should have a good understanding of python/pyspark and sql/sqpark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
 
 We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it.
+
+### Technology
+
+#### Databricks
+
+#### Azure Synapse Analytics and ADF
+
+#### Commonly used Azure components
 
 ## x. Software development best practice
 
