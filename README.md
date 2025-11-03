@@ -14,9 +14,9 @@ Could ask the team to write a short bio each here.
 
 [Useful resources](#Useful-resources)
 
-[Software and tech stack and software development priciples](#Useful-software-and-tech-stack)
+[Software and tech stack](#Software-and-tech-stack)
 
-[Software development best practice](#Software development best practice)
+[Software development best practice](#Software-development-best-practice)
 
 [Common Architectural patterns in data engineering](#.-Common-Architectural-patterns-in-data-engineering)
 
@@ -37,7 +37,7 @@ Could ask the team to write a short bio each here.
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
-## x. Useful software and tech stack
+## x. Software and tech stack
 
 Add in any useful resources for new data engineering starters here.
 
