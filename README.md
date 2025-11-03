@@ -37,6 +37,10 @@ Could ask the team to write a short bio each here.
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
+### Palantir
+
+* [Training track for data engineers](https://learn.palantir.com/page/training-track-data-engineer)
+
 ## x. Software and tech stack
 
 Add in any useful resources for new data engineering starters here.
