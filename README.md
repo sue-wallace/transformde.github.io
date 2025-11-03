@@ -53,6 +53,12 @@ For data engineers working in cloud infrastructure, version control and software
 
 Adopting branching strategies, code reviews, and pull requests promotes code quality and knowledge sharing. Automated testing and CI/CD pipelines should be integrated to validate transformations, enforce coding standards, and streamline deployments to cloud environments. Together, these practices reduce errors, improve reproducibility, and enable scalable, maintainable data engineering workflows.
 
+### Test Driven Development
+
+As data engineers we should adopt a test-driven development (TDD) approach whenever possible to ensure that data pipelines, transformations, and models are robust, reliable, and maintainable. By writing tests before implementing code, engineers can define clear expectations for data quality and logic which means catching issues early in development rather than in production. 
+
+TDD encourages modular, reusable code and builds confidence when refactoring or scaling pipelines. It also supports automated validation of schema changes, business rules, and performance assumptions.
+
 ## x. Common Architectural patterns in data engineering
 
 ### Medallion Architecture
