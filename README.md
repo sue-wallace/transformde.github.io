@@ -1,8 +1,17 @@
-## Contents - testing github pages
+Add X logo here
+
+Welcome to X and the data engineering onboarding pack! The purpose of this pack is to acclimatise you to X's landscape as a data engineer and to help you understand commonly used approaches in data engineering.
+
+## Contents 
 
 [1. Learning Pathways](#1.-Learning-Pathways)
 
 [2. Useful resources](#2.-Useful-resources)
+
+[3. Useful software](#2.-Useful-software)
+
+[4. Common Architectural patterns in data engineering](#4.-Common-Architectural-patterns-in-data-engineering)
+
 
 ## 1. Learning Pathways
 
@@ -22,7 +31,9 @@
 
 ## 2. Useful resources
 
-## 3. Common Architectural patterns in data engineering
+Add in any useful resources for new data engineering starters here
+
+## 4. Common Architectural patterns in data engineering
 
 ### Medallion Architecture
 
