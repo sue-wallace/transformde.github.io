@@ -134,6 +134,24 @@ By layering data transformations in this way, the Medallion Architecture promote
 
 ### File formats
 
+Understanding different file formats is a cricial aspect of data engineering because data is stored, transferred, and processed in many forms, each with its own strengths and trade-offs. The right format impacts performance, cost, and compatibility across data pipelines.
+
+For example:
+
+*CSV* is simple and human-readable but inefficient for large-scale analytics.
+
+*Parquet* has columnar format optimised for compression and query performance in cloud data warehouses.
+
+*Avro* and *JSON* are often better suited for streaming or schema evolution use cases.
+
+*Delta* files add transactional reliability and version control on top of data lakes.
+
+Delta (often called Delta Lake) is a modern open-source storage layer  that brings reliability, consistency, and performance to data lakes. It essentially upgrades a traditional data lake (like one on Azure Data Lake Storage) into a transactional, ACID-compliant data lakehouse. 
+
+Delta also offers 'time travel' and versioning which is tracked in a transactional log, as well as schema enforcement or schema evolution depending on the use case. 
+
+[More on Delta](https://delta.io/)
+
 ### Monitoring, error handling and alerting
 
 ### Partitioning
