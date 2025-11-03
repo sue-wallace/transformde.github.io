@@ -4,15 +4,13 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 ## Contents 
 
-[X's Structure](#structure)
+X's Structure
 
 The general X structure can be found in Bamboo under people > org chart. The data engineering team meets every two weeks on a Monday afternoon. 
 
 Could ask the team to write a short bio each here. 
 
 [Learning Pathways](#Learning-Pathways)
-
-[Useful resources](#Useful-resources)
 
 [Software and tech stack](#Software-and-tech-stack)
 
@@ -41,7 +39,7 @@ Could ask the team to write a short bio each here.
 
 * [Training track for data engineers](https://learn.palantir.com/page/training-track-data-engineer)
 
-## x. Software and tech stack
+## Software and tech stack
 
 Add in any useful resources for new data engineering starters here.
 
