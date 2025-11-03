@@ -88,6 +88,34 @@ During code reviews, engineers should look out for data logic accuracy, adherenc
 
 How the architecture is designed will be based on the clients use case and thier infrastructure they already have in place. The below concepts are to give an overview of commonly used architectural patterns.
 
+### Warehouses, lakes and lakehouses
+
+Data Warehouse (Structured Analytics)
+
+Azure Synapse Analytics – Microsoft’s flagship cloud data warehouse for large-scale analytics and reporting.
+
+Azure SQL Database – A managed relational database suitable for smaller-scale warehousing or departmental analytics.
+
+Power BI – Often paired with Synapse for visualization and reporting.
+
+💡 Example use case: Curating and modeling clean, structured data from multiple sources into star schemas for BI dashboards.
+
+🔷 Data Lake (Raw, Unprocessed Storage)
+
+Azure Data Lake Storage Gen2 (ADLS Gen2) – A scalable data lake built on top of Azure Blob Storage, ideal for storing raw structured, semi-structured, and unstructured data.
+
+Azure Databricks – Commonly used to process and transform raw data stored in ADLS using Spark.
+
+💡 Example use case: Storing raw IoT logs, CSVs, and JSON files from multiple systems for future transformation and analytics.
+
+🔷 Data Lakehouse (Unified Analytics Platform)
+
+Azure Databricks with Delta Lake – Implements the lakehouse paradigm by combining the flexibility of a data lake with the transactional reliability and query performance of a data warehouse.
+
+Microsoft Fabric (Lakehouse) – A newer, fully integrated lakehouse offering that unifies data engineering, analytics, and BI on top of OneLake.
+
+💡 Example use case: Using Delta tables in Databricks or Fabric’s Lakehouse to enable both SQL-based reporting and machine learning from the same data source.
+
 ### Medallion Architecture
 
 The Medallion Architecture is a data design pattern that structures data pipelines into three logical layers - Bronze, Silver, and Gold. The aim of this is to improve data quality, reliability, and reusability across an organisation. This architecture helps data teams manage the gradual refinement of raw data into business-ready insights. Each layer represents a different stage of data curation: Bronze holds raw, unprocessed data ingested from various sources; Silver contains cleaned and conformed data, where schema enforcement, deduplication, and validation occur; and Gold provides fully refined, aggregated, and business-oriented data models optimized for analytics, reporting, and machine learning.
@@ -95,4 +123,5 @@ The Medallion Architecture is a data design pattern that structures data pipelin
 By layering data transformations in this way, the Medallion Architecture promotes modularity, governance, and trust in the data ecosystem. It encourages teams to apply consistent data quality checks and transformation logic at defined points, enabling clear data lineage and simplifying troubleshooting. Additionally, it supports a test-driven and incremental development approach — new logic or data sources can be introduced at the Bronze or Silver layer without disrupting downstream users consuming Gold datasets. The result is a scalable, maintainable framework that supports both operational efficiency and analytical agility in modern data platforms.
 
 [Microsoft: What is the medallion lakehouse architecture?](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion)
+
 
