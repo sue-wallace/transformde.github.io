@@ -18,6 +18,7 @@ Could ask the team to write a short bio each here.
 
 [Common architectural patterns in data engineering](#Common-architectural-patterns-in-data-engineering)
 
+[Data Modelling](#Data-Modelling)
 
 ## Learning Pathways
 
@@ -87,7 +88,7 @@ During code reviews, engineers should look out for data logic accuracy, adherenc
 
 How the architecture is designed will be based on the clients use case and thier infrastructure they already have in place. The below concepts are to give an overview of commonly used architectural patterns.
 
-### Warehouses, lakes and lakehouses
+### Concepts: Warehouses, lakes and lakehouses
 
 🔷 Data Warehouse (Structured Analytics)
 
@@ -124,5 +125,17 @@ By layering data transformations in this way, the Medallion Architecture promote
 ![MedallionArch](medallion.png)
 
 [Microsoft: What is the medallion lakehouse architecture?](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion)
+
+### File formats
+
+### Monitoring and alerting
+
+### Partitioning
+
+### ETL/ELT
+
+### ACID Transactions
+
+## Data Modelling
 
 
