@@ -16,7 +16,7 @@ Could ask the team to write a short bio each here.
 
 [Software development best practice](#Software-development-best-practice)
 
-[Common Architectural patterns in data engineering](#.-Common-Architectural-patterns-in-data-engineering)
+[Common architectural patterns in data engineering](#.-Common-architectural-patterns-in-data-engineering)
 
 
 ## Learning Pathways
@@ -58,7 +58,7 @@ Azure Synapse Analytics and ADF
 
 Commonly used Azure components
 
-## x. Software development best practice
+## Software development best practice
 
 ### Getting started with git. 
 
@@ -82,7 +82,7 @@ Pull requests are a key part of collaborative development, allowing data enginee
 
 During code reviews, engineers should look out for data logic accuracy, adherence to coding and naming standards, performance implications (e.g. inefficient queries or transformations), and test coverage. Reviews also provide an opportunity to share knowledge, maintain consistency across the team, and uphold data quality and reliability standards. 
 
-## x. Common Architectural patterns in data engineering
+## Common architectural patterns in data engineering
 
 How the architecture is designed will be based on the clients use case and thier infrastructure they already have in place. The below concepts are to give an overview of commonly used architectural patterns.
 
