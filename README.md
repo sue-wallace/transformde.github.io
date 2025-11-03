@@ -90,7 +90,7 @@ How the architecture is designed will be based on the clients use case and thier
 
 ### Warehouses, lakes and lakehouses
 
-Data Warehouse (Structured Analytics)
+🔷 Data Warehouse (Structured Analytics)
 
 Azure Synapse Analytics – Microsoft’s flagship cloud data warehouse for large-scale analytics and reporting.
 
