@@ -41,6 +41,18 @@ Add in any useful resources for new data engineering starters here.
 
 As a data engineer you should have a good understanding of python/pyspark and sql/sqpark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
 
+We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it. 
+
+### Getting started with git. 
+
+Git is available on the company portal. If you want to use git with vs code you'll need to set it as an environment variable path on your device once you have downloaded it so that vs code can access it. 
+
+### Version control and software development best practice
+
+For data engineers working in cloud infrastructure, version control and software development best practices are essential to ensure reliability, collaboration, and traceability across data pipelines and environments. Using tools like Git and Azure DevOps allows teams to manage changes to infrastructure-as-code, ETL scripts, and data models in a controlled and auditable way. 
+
+Adopting branching strategies, code reviews, and pull requests promotes code quality and knowledge sharing. Automated testing and CI/CD pipelines should be integrated to validate transformations, enforce coding standards, and streamline deployments to cloud environments. Together, these practices reduce errors, improve reproducibility, and enable scalable, maintainable data engineering workflows.
+
 ## x. Common Architectural patterns in data engineering
 
 ### Medallion Architecture
