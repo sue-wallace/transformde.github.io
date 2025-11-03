@@ -14,7 +14,9 @@ Could ask the team to write a short bio each here.
 
 [Useful resources](#Useful-resources)
 
-[Useful software and tech stack](#Useful-software-and-tech-stack)
+[Software and tech stack and software development priciples](#Useful-software-and-tech-stack)
+
+[Software development best practice](#Software development best practice)
 
 [Common Architectural patterns in data engineering](#.-Common-Architectural-patterns-in-data-engineering)
 
@@ -41,7 +43,9 @@ Add in any useful resources for new data engineering starters here.
 
 As a data engineer you should have a good understanding of python/pyspark and sql/sqpark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
 
-We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it. 
+We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it.
+
+## x. Software development best practice
 
 ### Getting started with git. 
 
@@ -58,6 +62,12 @@ Adopting branching strategies, code reviews, and pull requests promotes code qua
 As data engineers we should adopt a test-driven development (TDD) approach whenever possible to ensure that data pipelines, transformations, and models are robust, reliable, and maintainable. By writing tests before implementing code, engineers can define clear expectations for data quality and logic which means catching issues early in development rather than in production. 
 
 TDD encourages modular, reusable code and builds confidence when refactoring or scaling pipelines. It also supports automated validation of schema changes, business rules, and performance assumptions.
+
+### Pull requests
+
+Pull requests are a key part of collaborative development, allowing data engineers to propose changes for review before merging into shared codebases. Protecting the main branch ensures that only tested, reviewed, and approved code is deployed which will prevent accidental overwrites or unverified changes that could disrupt production pipelines. 
+
+During code reviews, engineers should look out for data logic accuracy, adherence to coding and naming standards, performance implications (e.g. inefficient queries or transformations), and test coverage. Reviews also provide an opportunity to share knowledge, maintain consistency across the team, and uphold data quality and reliability standards. 
 
 ## x. Common Architectural patterns in data engineering
 
