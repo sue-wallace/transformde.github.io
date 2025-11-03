@@ -21,7 +21,7 @@ Could ask the team to write a short bio each here.
 [Common Architectural patterns in data engineering](#.-Common-Architectural-patterns-in-data-engineering)
 
 
-## x. Learning Pathways
+## Learning Pathways
 
 ### Azure certifications for data engineers
 
