@@ -154,6 +154,47 @@ Delta also offers 'time travel' and versioning which is tracked in a transaction
 
 ### Monitoring, error handling and alerting
 
+This guidence is based on using Azure and Dtaabricks but the core principles are applicable across most platforms and projects. 
+
+#### Monitoring — Observing Pipeline Health and Performance
+
+Monitoring helps you understand pipeline reliability, performance, and data quality.
+In Azure, you typically monitor across several layers:
+
+Azure Data Factory (ADF) / Synapse Pipelines
+
+Use Azure Monitor integration to track pipeline and activity runs and enable diagnostic logging to send metrics and logs to:
+
+* Log Analytics Workspace
+
+* Azure Storage
+
+* Event Hubs (for downstream systems)
+
+Key metrics you might want to monitor for include:
+
+* Pipeline success/failure rates
+
+* Duration and performance trends
+
+* Data volumes processed
+
+Storage and Compute Monitoring
+
+* Azure Data Lake Storage Gen2: Track read/write operations, throttling, and latency in Azure Monitor.
+
+* Synapse / SQL Pools: Monitor query performance, concurrency, and resource utilisation via SQL Insights or Query Store.
+
+#### Error handling 
+
+A robust pipeline should gracefully handle errors and allow controlled retries if applicable.
+
+For example in ADF/Synapse in the events of a failure you can configure retry policies on critical activities (e.g. copy, notebook, stored procedure).
+
+For transient errors due to things like network issues or cloud resource scaling you can use backoff strategies which give an exponential delay between retries. This is essentially how ling teh pipeline should wait before conducting a retry after each failed attempt. 
+
+You can also store error metadata (pipeline name, activity, error message, timestamp) in a central log table for audit and debugging.
+
 ### Partitioning
 
 ### ETL/ELT
