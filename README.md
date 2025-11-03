@@ -4,16 +4,22 @@ Welcome to X and the data engineering onboarding pack! The purpose of this pack 
 
 ## Contents 
 
-[1. Learning Pathways](#1.-Learning-Pathways)
+[X's Structure](#structure)
 
-[2. Useful resources](#2.-Useful-resources)
+The general X structure can be found in Bamboo under people > org chart. The data engineering team meets every two weeks on a Monday afternoon. 
 
-[3. Useful software](#2.-Useful-software)
+Could ask the team to write a short bio each here. 
 
-[4. Common Architectural patterns in data engineering](#4.-Common-Architectural-patterns-in-data-engineering)
+[Learning Pathways](#Learning-Pathways)
+
+[Useful resources](#Useful-resources)
+
+[Useful software and tech stack](#Useful-software-and-tech-stack)
+
+[Common Architectural patterns in data engineering](#.-Common-Architectural-patterns-in-data-engineering)
 
 
-## 1. Learning Pathways
+## x. Learning Pathways
 
 ### Azure certifications for data engineers
 
@@ -29,11 +35,13 @@ Welcome to X and the data engineering onboarding pack! The purpose of this pack 
 * [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 * [Generative AI Engineer Associate](https://www.databricks.com/learn/certification/genai-engineer-associate)
 
-## 2. Useful resources
+## x. Useful software and tech stack
 
-Add in any useful resources for new data engineering starters here
+Add in any useful resources for new data engineering starters here.
 
-## 4. Common Architectural patterns in data engineering
+As a data engineer you should have a good understanding of python/pyspark and sql/sqpark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
+
+## x. Common Architectural patterns in data engineering
 
 ### Medallion Architecture
 
