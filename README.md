@@ -6,9 +6,7 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 X's Structure
 
-The general X structure can be found in Bamboo under people > org chart. The data engineering team meets every two weeks on a Monday afternoon. 
-
-Could ask the team to write a short bio each here. 
+The general X structure can be found in Bamboo under people > org chart. 
 
 [Learning Pathways](#Learning-Pathways)
 
