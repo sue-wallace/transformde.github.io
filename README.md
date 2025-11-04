@@ -43,7 +43,8 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 Working as a data engineer in a consulting role requires belnding technical expertise with strong communication and problem solving skills. 
 
-🎯 Focus on delivering value to the business, not just code
+🎯 Focus on delivering value to the business, not just code.
+
 A consultant's primary goal is to solve a client's business problem, not just build a perfect pipeline.
 
 Understand the "Why": Always start by asking, "What business decision or outcome will this data product enable?" If the pipeline doesn't drive business value (e.g., increased revenue, reduced cost, mitigated risk), it may be unnecessary.
@@ -74,7 +75,7 @@ Knowledge Transfer: Always plan for a formal handover and documentation phase to
 
 ### Languages
 
-As a data engineer you should have a good understanding of python/pyspark and sql/sqpark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
+As a data engineer you should have a good understanding of python/pyspark and sql/spark sql. You should also have a good understanding of [spark](https://www.databricks.com/glossary/what-is-apache-spark) and distributed compute. 
 
 We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it.
 
@@ -82,7 +83,7 @@ We dont have admin rights on our devices but any apps that you will need should 
 
 #### Commenting in code
 
-CComments should enhance understanding such as explaining complex logix, and shouldn't document what can already be gleaned from the code. Any comments in code should be brief and direct. Pipelines should be fully documented as part of the DevOps process within a wiki page. Refer to the 'Documentation' section in Data Engineer Consulting Skills to understand how to properly document a project. 
+Comments should enhance understanding such as explaining complex logic, and shouldn't document what can already be gleaned from the code. Any comments in code should be brief and direct. Pipelines should be fully documented as part of the DevOps process within a wiki page. Refer to the 'Documentation' section in Data Engineer Consulting Skills to understand how to properly document a project. 
 
 #### SQL query best practice
 
@@ -101,14 +102,6 @@ These rules ensure queries are high-performing, maintainable, and explicitly cle
 * Use Common Table Expressions (CTEs): Use WITH clauses instead of nesting subqueries. CTEs significantly improve readability by breaking down complex logic into sequential, named steps.
 
 (Guidence here about writing performant sql queries)
-
-### Technology
-
-Databricks
-
-Azure Synapse Analytics and ADF
-
-Commonly used Azure components
 
 ## Software development best practice
 
