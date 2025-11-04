@@ -4,7 +4,7 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 ## Contents 
 
-[Learning Pathways](#Learning-Pathways)
+[Learning Pathways](#learning-pathways)
 
 [Data Engineer Consulting Skills](#Data-Engineer-Consulting-Skills)
 
