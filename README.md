@@ -10,6 +10,8 @@ The general X structure can be found in Bamboo under people > org chart.
 
 [Learning Pathways](#Learning-Pathways)
 
+[Data Engineer Consulting Skills](#Data-Engineer-Consulting-Skills)
+
 [Software and tech stack](#Software-and-tech-stack)
 
 [Software development best practice](#Software-development-best-practice)
@@ -42,10 +44,11 @@ The general X structure can be found in Bamboo under people > org chart.
 
 * [Training track for data engineers](https://learn.palantir.com/page/training-track-data-engineer)
 
+## Data Engineer Consulting Skills
+
+### Documentation
+
 ## Software and tech stack
-
-Add in any useful resources for new data engineering starters here.
-
 
 ### Languages
 
@@ -53,7 +56,13 @@ As a data engineer you should have a good understanding of python/pyspark and sq
 
 We dont have admin rights on our devices but any apps that you will need should be available in the company portal for download. If an app that you need is not in the company portal then you should contact IT and ask if they can add it.
 
-### Coding style Guide
+### Coding style guide
+
+#### Commenting in code
+
+CComments should enhance understanding such as explaining complex logix, and shouldn't document what can already be gleaned from the code. Any comments in code should be brief and direct. Pipelines should be fully documented as part of the DevOps process within a wiki page. Refer to the 'Documentation' section in Data Engineer Consulting Skills to understand how to properly document a project. 
+
+#### SQL
 
 
 ### Technology
