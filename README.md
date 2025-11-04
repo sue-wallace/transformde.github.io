@@ -299,20 +299,12 @@ Special dimension types:
 
 4. Integration via Conformed Dimensions
 
-A key principle is conformed dimensions: dimensions shared across multiple fact tables, ensuring consistency and enabling cross-subject “drill across.” 
-Kimball Group
-
-Concepts like shrunken rollups, drilling across, bus architecture (data warehouse bus), and bus matrix are introduced as architectural tools to manage integration across domains. 
-Kimball Group
-+1
-
-Also mentions how to maintain consistency across subject areas (the “value chain”). 
-Kimball Group
+A key principle in the Kimball methodology is conformed dimensions, which are shared across multiple fact tables, ensuring consistency and enabling cross-subject “drill across.” 
 
 5. Slowly Changing Dimensions (SCD)
 
-The page covers various techniques for managing dimension attribute changes over time: 
-Kimball Group
+Slowly Changing Dimensions (SCD) are methods for managing data that changes over time in a data warehouse, allowing you to track historical information instead of just keeping the current state.
+
 
 Type 0: retain original value (do nothing)
 
@@ -324,8 +316,6 @@ Type 3: add a new attribute (partial history)
 
 Type 4: mini-dimension (offload historical attributes)
 
-Type 5, 6, 7: hybrid or combined approaches (mixing strategies) 
-Kimball Group
 
 6. Dimension Hierarchy Techniques
 
