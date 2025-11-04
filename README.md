@@ -235,6 +235,12 @@ Idempotency is the property of an operation that ensures it produces the exact s
 
 ### Batching and Streaming
 
+*Batch* and *Streaming* represent the two fundamental paradigms for handling data in data engineering. The choice whether to batch or stream data is driven primarily by the required latency and the volume/nature of the data.
+
+Batch processing involves collecting and processing data in large, finite chunks at scheduled intervals (e.g., hourly, daily, weekly). Batch pipelines usually offer high latency, for example the results from the data is needed hours or days later. Batch pipelines are generally less complex to set up and are generally more cost efficient. For these reasons it is usually the prefered methodology.
+
+Streaming processing involves handling data continuously, record-by-record, or in very small, rapid "micro-batches," immediately as it arrives. Data is processed event by event and this kind of pipeline is only usually used when a pipeline needs to have low latency, meaning results are needed within seconds. Streaming pipelines can be complex to handle due to having to deal with out of order data. 
+
 ## Data Modelling Methodologies
 
 Data modelling is the process of designing how data is structured, stored, and related within a system. As a data engineer, it involves defining entities, attributes, and relationships to create efficient, scalable, and consistent database or data warehouse schemas. Good data models ensure data integrity, support analytics and reporting needs, and make it easier for teams to extract reliable insights from the data.
