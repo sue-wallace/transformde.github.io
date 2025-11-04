@@ -324,6 +324,24 @@ Type 3: add a new attribute (partial history)
 
 Type 4: mini-dimension (offload historical attributes)
 
+### Normalised modelling
+
+Most data engineering use cases would fit under the structure of OLAP as data engineering processes more often than not are sufacing data for analytics rather than understanding transactions. Despite this distinction it is still worth having an understanding of normalised data modelling.
+
+Normalisation is a systematic process of organising the fields and tables of a relational database to minimize data redundancy and improve data integrity. It ensures that data is stored logically and consistently.
+
+⭐ Key Goals of Normalization
+
+* Reduce Redundancy: Store each piece of information only once, saving storage space.
+
+* Improve Data Integrity: Since data is stored in one place, updates are easy and consistent, which reduces the risk of data anomalies (inconsistencies caused by insertion, update, or deletion).
+
+* Efficient Writes (Updates): Changes only need to be made in a single location.
+
+🪜 Normal Forms (The Rules)
+
+Normalization is achieved by following a series of rules called Normal Forms. The first three are the most common
+
 
 ### Other types of modelling & one big table
 
