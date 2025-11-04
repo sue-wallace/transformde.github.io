@@ -113,16 +113,7 @@ How the architecture is designed will be based on the clients use case and thier
 
 ## Data engineering techniques
 
-### Best practice
-
-### Incremental/delta Loads
-
-### Idempotency
-
-### Batching and Streaming
-
-
-### Concepts: Warehouses, lakes and lakehouses
+### Warehouses, lakes and lakehouses
 
 🔷 Data Warehouse (Structured Analytics)
 
@@ -235,6 +226,12 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 ### ETL/ELT
 
 ### ACID Transactions
+
+### Incremental/delta Loads
+
+### Idempotency
+
+### Batching and Streaming
 
 ## Data Modelling Methodologies
 
