@@ -230,7 +230,7 @@ A robust pipeline should gracefully handle errors and allow controlled retries i
 
 For example in ADF/Synapse in the events of a failure you can configure retry policies on critical activities (e.g. copy, notebook, stored procedure).
 
-For transient errors due to things like network issues or cloud resource scaling you can use backoff strategies which give an exponential delay between retries. This is essentially how ling teh pipeline should wait before conducting a retry after each failed attempt. 
+For transient errors due to things like network issues or cloud resource scaling you can use backoff strategies which give an exponential delay between retries. This is essentially how ling the pipeline should wait before conducting a retry after each failed attempt. 
 
 You can also store error metadata (pipeline name, activity, error message, timestamp) in a central log table for audit and debugging.
 
