@@ -231,6 +231,8 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 ### Idempotency
 
+Idempotency is the property of an operation that ensures it produces the exact same result every time it's executed, regardless of how many times it runs. In data engineering, this means running an ETL/ELT pipeline or a specific transformation multiple times with the same input data will not result in duplicated data or inconsistent states, making pipelines safe to retry upon failure and ensuring data quality and reliability.
+
 ### Batching and Streaming
 
 ## Data Modelling Methodologies
