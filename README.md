@@ -247,9 +247,27 @@ Transform: Transformation, cleansing, and modeling (often using SQL tools like d
 
 ### ACID Properties
 
-ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably. While ACID is fundamental to relational databases (OLTP systems), it is also crucial in modern data engineering, particularly in data lakehouse environments, to ensure data integrity during complex batch and streaming processes
+*ACID* (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably. While ACID is fundamental to relational databases (OLTP systems), it is also crucial in modern data engineering, particularly in data lakehouse environments, to ensure data integrity during complex batch and streaming processes.
+
+*Atomicity* guarantees that a transaction is treated as a single, indivisible unit of work. It either succeeds completely or fails completely.
+
+*Isolation* ensures that the concurrent execution of multiple transactions results in the same state that would have been achieved if the transactions had been executed sequentially. Transactions do not interfere with each other.
+
+*Durability* guarantees that once a transaction has been committed (successfully completed), its changes are permanent and will survive any subsequent system failures (power loss, crashes, etc.)
 
 ### Incremental/delta Loads
+
+Incremental/Delta Loads are a fundamental data engineering technique used to move only the data that has changed or is new since the last successful load, rather than reloading the entire dataset. This process is essential for efficiency, speed, and cost reduction in data pipelines.
+
+In order for an incremental load to work the boundry between the data that has already been loaded and the new or modified data needs to be idenitified. There are three key steps:
+
+Identify Changes (The "Delta"): The process determines which records in the source system have been added, modified, or sometimes deleted since the last load time.
+
+Extract Only the Delta: The pipeline extracts only these identified changes (the "delta") from the source.
+
+Apply to Destination: The delta records are loaded into the destination table, either by appending new records or updating/merging existing ones.
+
+The most common method for tracking new or changed records is using a timestamp variable to understand when the pipeline was last sucessfully run - only records with a timestamp that is greater than the last run are loaded. 
 
 ### Idempotency
 
