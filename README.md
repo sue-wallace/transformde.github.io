@@ -225,6 +225,28 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 ### ETL/ELT
 
+Whether to use ETL (Extract, Transform, Load) or ELT (Extract, Load, Transform) is a core decision in data engineering, regardless of whether you're using batch or streaming data ingestion.
+
+The primary difference lies in the timing and location of the Transformation (T) step and is largely dictated by the technology used in the destination system.
+
+*ETL* (Extract, Transform, Load) is the older, more traditional paradigm.
+
+Extract: Data is pulled from the source system.
+
+Transform: The raw data is moved to a separate staging area or dedicated server where it is cleaned, structured, aggregated, and standardised. This step consumes processing power outside the final data warehouse.
+
+Load: The cleaned, structured, and compliant data is finally loaded into the target data warehouse.
+
+*ELT* (Extract, Load, Transform) is the modern standard, enabled by the massive processing power of the cloud.
+
+Extract: Data is pulled from the source system.
+
+Load: The raw, unaltered data is immediately loaded directly into the destination system (usually a Cloud Data Warehouse or Data Lake).
+
+Transform: Transformation, cleansing, and modeling (often using SQL tools like dbt) are performed inside the destination system, leveraging its processing power.
+
+
+
 ### ACID Transactions
 
 ### Incremental/delta Loads
