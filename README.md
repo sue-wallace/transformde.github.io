@@ -18,7 +18,7 @@ Could ask the team to write a short bio each here.
 
 [Common architectural patterns in data engineering](#Common-architectural-patterns-in-data-engineering)
 
-[Data Modelling](#Data-Modelling)
+[Data Modelling Methodologies](#Data-Modelling)
 
 [Data engineering techniques](#Data-engineering-techniques)
 
@@ -208,7 +208,7 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 ### ACID Transactions
 
-## Data Modelling
+## Data Modelling Methodologies
 
 Data modelling is the process of designing how data is structured, stored, and related within a system. As a data engineer, it involves defining entities, attributes, and relationships to create efficient, scalable, and consistent database or data warehouse schemas. Good data models ensure data integrity, support analytics and reporting needs, and make it easier for teams to extract reliable insights from the data.
 
@@ -345,7 +345,11 @@ Normalisation is achieved by following a series of rules called Normal Forms. Th
 ![Normal Forms](normal_forms.png)
 
 
-### Other types of modelling & one big table
+### One big table
+
+One big table is an extreme normalisation strategy whereby all necessary data for an analyticsla purpose is stored in one really wide table. However unlike the normalised methid as described above which is largely used for transactional data, one big table is usually reserved for analytics. 
+
+There are some pros to using the one big table method - it allows for extremely fast query execution and makes querying data much simpler. The downside is it lacks flexibility, this goes back to teh rule about keeping data models extensible. This is difficult to acheive with one big table. For eg say a customer moves to a new address - this address would need to be amended in every row that the customer appears, rather than just amending it directly in a dim table. 
 
 ## Batching and Streaming
 
