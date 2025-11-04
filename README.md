@@ -330,7 +330,7 @@ Most data engineering use cases would fit under the structure of OLAP as data en
 
 Normalisation is a systematic process of organising the fields and tables of a relational database to minimize data redundancy and improve data integrity. It ensures that data is stored logically and consistently.
 
-⭐ Key Goals of Normalization
+⚙️ Key Goals of Normalization
 
 * Reduce Redundancy: Store each piece of information only once, saving storage space.
 
@@ -338,9 +338,11 @@ Normalisation is a systematic process of organising the fields and tables of a r
 
 * Efficient Writes (Updates): Changes only need to be made in a single location.
 
-🪜 Normal Forms (The Rules)
+Normal Forms (The Rules)
 
-Normalization is achieved by following a series of rules called Normal Forms. The first three are the most common
+Normalisation is achieved by following a series of rules called Normal Forms. The first three are the most common
+
+![Normal Forms](normal_forms.png)
 
 
 ### Other types of modelling & one big table
