@@ -245,9 +245,9 @@ Load: The raw, unaltered data is immediately loaded directly into the destinatio
 
 Transform: Transformation, cleansing, and modeling (often using SQL tools like dbt) are performed inside the destination system, leveraging its processing power.
 
+### ACID Properties
 
-
-### ACID Transactions
+ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably. While ACID is fundamental to relational databases (OLTP systems), it is also crucial in modern data engineering, particularly in data lakehouse environments, to ensure data integrity during complex batch and streaming processes
 
 ### Incremental/delta Loads
 
