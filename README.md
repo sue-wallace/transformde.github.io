@@ -41,7 +41,34 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 ## Data Engineer Consulting Skills
 
-### Documentation
+Working as a data engineer in a consulting role requires belnding technical expertise with strong communication and problem solving skills. 
+
+🎯 Focus on delivering value to the business, not just code
+A consultant's primary goal is to solve a client's business problem, not just build a perfect pipeline.
+
+Understand the "Why": Always start by asking, "What business decision or outcome will this data product enable?" If the pipeline doesn't drive business value (e.g., increased revenue, reduced cost, mitigated risk), it may be unnecessary.
+
+Prioritise Impact: Design solutions that are "good enough" and fast over "perfect" and slow. A solution delivered in three months that captures 80% of the value is better than a perfect solution delivered in nine.
+
+Cost-Benefit Analysis: Be ready to justify the technology choices based on total cost of ownership, licensing, and cloud compute usage.
+
+🗣️ Master Communication and Stakeholder Management
+
+Translate technical concepts: Be able to explain complex architecture (e.g., ACID properties, denormalization, streaming ingestion) to non-technical stakeholders (e.g., executives, marketing teams) using simple analogies and focusing on the impact and risk.
+
+Manage expectations: Be transparent about project scope, realistic timelines, and potential roadblocks. 
+
+Active Listening: Spend more time listening to the client's current pain points, existing architecture, and internal team capabilities before proposing a solution.
+
+🗺️ Follow a Structured Methodology
+Consulting engagements should follow a clear, repeatable process.
+
+Discovery phase: Dedicate time upfront to map out the current state (existing systems, data sources, people) and the future state (the desired solution and architecture).
+
+Data Governance & Quality: Never neglect to discuss data quality checks, metadata management, and security/compliance (PII) early on. These are often the biggest risks and costs.
+
+Knowledge Transfer: Always plan for a formal handover and documentation phase to ensure the client's internal team can maintain and extend the solution after you leave or if you are not available..
+
 
 ## Software and tech stack
 
