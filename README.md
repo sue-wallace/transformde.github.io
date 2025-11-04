@@ -305,11 +305,11 @@ Special dimension types:
 
 * Snowflaked dimensions (less common, normalized sub-dimensions). 
 
-4. Integration via Conformed Dimensions
+*Integration via Conformed Dimensions*
 
 A key principle in the Kimball methodology is conformed dimensions, which are shared across multiple fact tables, ensuring consistency and enabling cross-subject “drill across.” 
 
-5. Slowly Changing Dimensions (SCD)
+*Slowly Changing Dimensions (SCD)*
 
 Slowly Changing Dimensions (SCD) are methods for managing data that changes over time in a data warehouse, allowing you to track historical information instead of just keeping the current state.
 
