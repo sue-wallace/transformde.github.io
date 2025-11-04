@@ -285,6 +285,8 @@ This part addresses how to design the descriptive side of the schema through dim
 
 Dimension structure should include the use of surrogate keys (artificial integer keys) rather than relying on natural keys.
 
+![Dimention detail](dim_detail.png)
+
 Special dimension types:
 
 * Calendar date / time dimensions.
