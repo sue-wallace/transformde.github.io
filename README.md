@@ -37,7 +37,7 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 ### Palantir
 
-* [Training track for data engineers](https://learn.palantir.com/page/training-track-data-engineer)
+* [Data Engineer training track](https://learn.palantir.com/page/training-track-data-engineer)
 
 ## Data Engineer Consulting Skills
 
