@@ -251,11 +251,6 @@ Key concepts introduced:
 
 Star schemas & OLAP cubes — dimensional models are often implemented in star schema layout (fact in center, dimensions around), and can support OLAP-style analysis.
 
-           DimDate
-              |
-DimCustomer — FactSales — DimProduct
-              |
-           DimStore
 
 ![FactsDims](facts_dims.png)
 
