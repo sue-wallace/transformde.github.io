@@ -212,7 +212,7 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 Data modelling is the process of designing how data is structured, stored, and related within a system. As a data engineer, it involves defining entities, attributes, and relationships to create efficient, scalable, and consistent database or data warehouse schemas. Good data models ensure data integrity, support analytics and reporting needs, and make it easier for teams to extract reliable insights from the data.
 
-
+The type of data model you chose will depend on the use case and data. Generally speaking you will need to choose between a normalised or denormalised appraoch. Typically normalised data suits OLTP (Online Transactional Processing) data and denormalised modelling suits OLAP (Online Analytical Processing). 
 
 ### Dimensional data modelling (denormalisation & the Kimball approach)
 
@@ -316,54 +316,6 @@ Type 3: add a new attribute (partial history)
 
 Type 4: mini-dimension (offload historical attributes)
 
-
-6. Dimension Hierarchy Techniques
-
-Techniques for handling hierarchies in dimensions:
-
-Fixed-depth positional hierarchies (e.g. levels known ahead).
-
-Slightly ragged / variable-depth hierarchies (some branches shorter).
-
-Ragged hierarchies (variable depth, “holes” in levels). 
-Kimball Group
-
-7. Advanced Fact Table Techniques
-
-This section touches on more sophisticated modeling patterns for fact tables: 
-Kimball Group
-
-Using surrogate key in fact tables.
-
-Centipede fact tables (a kind of fan-out structure).
-
-Treating numeric values as attributes vs facts.
-
-Lag / duration facts (e.g. time between events).
-
-Header/line fact tables (for hierarchical facts, e.g. invoices + line items).
-
-Allocated facts (e.g. allocating overheads) and profit & loss tables.
-
-Handling multiple currencies, multiple units of measure.
-
-Year-to-date facts, multipass SQL to avoid fact-to-fact joins.
-
-Timespan tracking, late arriving facts. 
-Kimball Group
-
-8. Advanced Dimension Table Techniques
-
-Finally, the page mentions advanced patterns for dimensions: 
-Kimball Group
-
-Dimension-to-dimension table joins (dimension relationships).
-
-Multivalued dimensions and bridge tables (e.g. a fact could be associated with multiple members of a dimension).
-
-Behavior tag time series, behavior study group, aggregated facts as dimension attributes.
-
-Dynamic value banding, text comments, multiple time zones, measure type dimensions, step dimensions, hot-swappable dimensions, abstract / generic dimensions, audit dimensions, and late arriving dimensions.
 
 ### Other types of modelling & one big table
 
