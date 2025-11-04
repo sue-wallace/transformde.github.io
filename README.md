@@ -257,7 +257,7 @@ DimCustomer — FactSales — DimProduct
               |
            DimStore
 
-
+![FactsDims](facts_dims.png)
 
 
 
