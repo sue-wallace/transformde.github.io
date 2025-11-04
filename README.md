@@ -6,17 +6,17 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 [Learning Pathways](#learning-pathways)
 
-[Data Engineer Consulting Skills](#Data-Engineer-Consulting-Skills)
+[Data Engineer Consulting Skills](#data-engineer-consulting-skills)
 
-[Software and tech stack](#Software-and-tech-stack)
+[Software and tech stack](#software-and-tech-stack)
 
-[Data engineering techniques](#Data-engineering-techniques)
+[Data engineering techniques](#data-engineering-techniques)
 
-[Software development best practice](#Software-development-best-practice)
+[Software development best practice](#software-development-best-practice)
 
-[Common architectural patterns in data engineering](#Common-architectural-patterns-in-data-engineering)
+[Common architectural patterns in data engineering](#common-architectural-patterns-in-data-engineering)
 
-[Data Modelling Methodologies](#Data-Modelling-Methodologies)
+[Data Modelling Methodologies](#data-modelling-methodologies)
 
 
 ## Learning Pathways
