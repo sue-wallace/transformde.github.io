@@ -261,60 +261,39 @@ Kimball Group
 2. Fact Table Techniques
 
 This section enumerates various patterns and considerations for fact tables: 
-Kimball Group
 
-Fact table structure — core layout and linking to dimensions.
+*Fact table structure — core layout and linking to dimensions*
 
-Additive, semi-additive, non-additive facts — whether measures can be summed across all dimensions (e.g. sales is additive, inventory balance is semi-additive).
-
-Handling nulls in fact tables.
-
-Conformed facts — ensuring facts align across multiple fact tables or subject areas.
+Fact tables can be additive, semi-additive, non-additive  — whether measures can be summed across all dimensions (e.g. sales is additive, inventory balance is semi-additive).
 
 Variants of facts:
 
-Transaction fact tables (each event recorded).
+* Transaction fact tables (each event recorded).
 
-Periodic snapshot fact tables (e.g. daily/monthly aggregates).
+* Periodic snapshot fact tables (e.g. daily/monthly aggregates).
 
-Accumulating snapshot fact tables (e.g. tracking a process with start and end milestones).
+* Accumulating snapshot fact tables (e.g. tracking a process with start and end milestones).
 
-Factless fact tables (no numeric measure, just capturing an event or relationship).
+* Factless fact tables (no numeric measure, just capturing an event or relationship).
 
-Aggregated fact tables / cubes and consolidated fact tables for performance optimizations. 
-Kimball Group
+* Aggregated fact tables / cubes and consolidated fact tables for performance optimizations. 
+
 
 3. Dimension Table Techniques
 
-This part addresses how to design the descriptive side of the schema: 
-Kimball Group
+This part addresses how to design the descriptive side of the schema through dimentions tables. 
 
-Dimension structure, including use of surrogate keys (artificial integer keys) rather than relying on natural keys.
-
-Differences between natural, durable, and supernatural keys.
-
-Drill down (navigating hierarchical levels).
-
-Degenerate dimensions (when a dimension attribute resides in the fact table).
-
-Denormalized / flattened dimensions to reduce joins.
-
-Supporting multiple hierarchies in a dimension.
-
-Use of flags and indicator attributes (e.g. is_active, is_preferred).
-
-Null attributes (how to represent missing or unknown descriptive detail).
+Dimension structure should include the use of surrogate keys (artificial integer keys) rather than relying on natural keys.
 
 Special dimension types:
 
-Calendar date / time dimensions.
+* Calendar date / time dimensions.
 
-Role-playing dimensions (same dimension used for different roles, e.g. Order Date vs Ship Date).
+* Role-playing dimensions (same dimension used for different roles, e.g. Order Date vs Ship Date).
 
-Junk dimensions (grouping miscellaneous flags/attributes).
+* Junk dimensions (grouping miscellaneous flags/attributes).
 
-Snowflaked dimensions / outrigger dimensions (less common, normalized sub-dimensions). 
-Kimball Group
+* Snowflaked dimensions (less common, normalized sub-dimensions). 
 
 4. Integration via Conformed Dimensions
 
