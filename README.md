@@ -16,7 +16,7 @@ The general X structure can be found in Bamboo under people > org chart.
 
 [Common architectural patterns in data engineering](#Common-architectural-patterns-in-data-engineering)
 
-[Data Modelling Methodologies](#Data-Modelling)
+[Data Modelling Methodologies](#Data-Modelling-Methodologies)
 
 [Data engineering techniques](#Data-engineering-techniques)
 
