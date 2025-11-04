@@ -101,7 +101,6 @@ These rules ensure queries are high-performing, maintainable, and explicitly cle
 
 * Use Common Table Expressions (CTEs): Use WITH clauses instead of nesting subqueries. CTEs significantly improve readability by breaking down complex logic into sequential, named steps.
 
-(Guidence here about writing performant sql queries)
 
 ## Software development best practice
 
