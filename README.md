@@ -249,14 +249,13 @@ Key concepts introduced:
 
 - Facts — the numeric measurements or metrics associated with the business process.
 
-Star schemas & OLAP cubes — dimensional models are often implemented in star schema layout (fact in center, dimensions around), and can support OLAP-style analysis.
+- Star schemas & OLAP cubes — dimensional models are often implemented in star schema layout (fact in center, dimensions around) and can support OLAP-style analysis.
 
 
 ![FactsDims](facts_dims.png)
 
 
-
-Graceful extensions — ability to evolve and extend the model over time without massive rework. 
+- Graceful extensions — ability to evolve and extend the model over time without massive rework. 
 Kimball Group
 
 2. Fact Table Techniques
