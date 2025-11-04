@@ -212,7 +212,15 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 Data modelling is the process of designing how data is structured, stored, and related within a system. As a data engineer, it involves defining entities, attributes, and relationships to create efficient, scalable, and consistent database or data warehouse schemas. Good data models ensure data integrity, support analytics and reporting needs, and make it easier for teams to extract reliable insights from the data.
 
-The type of data model you chose will depend on the use case and data. Generally speaking you will need to choose between a normalised or denormalised appraoch. Typically normalised data suits OLTP (Online Transactional Processing) data and denormalised modelling suits OLAP (Online Analytical Processing). 
+The type of data model you chose will depend on the usecase and data. Generally speaking you will need to choose between a normalised or denormalised appraoch. Typically normalised data suits OLTP (Online Transactional Processing) data and denormalised modelling suits OLAP (Online Analytical Processing). 
+
+*OLTP*
+
+Imagine you're processing sales data for a retailer. An OLTP system would record each sale as it occurs and would include current and recent data to understand operations daily, for example understanding if an order has been shipped that day. This suits a normalised structure. 
+
+*OLAP*
+
+The OLAP system would take the sales data to analyse trends or customer behaviour, so the data would be historical and should be easily aggregated, for example how many orders were shipped last month. This suits a denormalised structure. 
 
 ### Dimensional data modelling (denormalisation & the Kimball approach)
 
