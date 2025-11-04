@@ -14,15 +14,14 @@ The general X structure can be found in Bamboo under people > org chart.
 
 [Software and tech stack](#Software-and-tech-stack)
 
+[Data engineering techniques](#Data-engineering-techniques)
+
 [Software development best practice](#Software-development-best-practice)
 
 [Common architectural patterns in data engineering](#Common-architectural-patterns-in-data-engineering)
 
 [Data Modelling Methodologies](#Data-Modelling-Methodologies)
 
-[Data engineering techniques](#Data-engineering-techniques)
-
-[Batching and Streaming](#Batching-and-Streaming)
 
 ## Learning Pathways
 
@@ -78,6 +77,8 @@ These rules ensure queries are high-performing, maintainable, and explicitly cle
 
 * Use Common Table Expressions (CTEs): Use WITH clauses instead of nesting subqueries. CTEs significantly improve readability by breaking down complex logic into sequential, named steps.
 
+(Guidence here about writing performant sql queries)
+
 ### Technology
 
 Databricks
@@ -113,6 +114,17 @@ During code reviews, engineers should look out for data logic accuracy, adherenc
 ## Common architectural patterns in data engineering
 
 How the architecture is designed will be based on the clients use case and thier infrastructure they already have in place. The below concepts are to give an overview of commonly used architectural patterns.
+
+## Data engineering techniques
+
+### Best practice
+
+### Incremental/delta Loads
+
+### Idempotency
+
+### Batching and Streaming
+
 
 ### Concepts: Warehouses, lakes and lakehouses
 
@@ -371,13 +383,8 @@ One big table is an extreme normalisation strategy whereby all necessary data fo
 
 There are some pros to using the one big table method - it allows for extremely fast query execution and makes querying data much simpler. The downside is it lacks flexibility, this goes back to teh rule about keeping data models extensible. This is difficult to acheive with one big table. For eg say a customer moves to a new address - this address would need to be amended in every row that the customer appears, rather than just amending it directly in a dim table. 
 
-## Batching and Streaming
 
-## Data engineering techniques
 
-### Best practice
 
-### Incremental/delta Loads
 
-### Idempotency
 
