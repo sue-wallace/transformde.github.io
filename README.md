@@ -62,8 +62,21 @@ We dont have admin rights on our devices but any apps that you will need should 
 
 CComments should enhance understanding such as explaining complex logix, and shouldn't document what can already be gleaned from the code. Any comments in code should be brief and direct. Pipelines should be fully documented as part of the DevOps process within a wiki page. Refer to the 'Documentation' section in Data Engineer Consulting Skills to understand how to properly document a project. 
 
-#### SQL
+#### SQL query best practice
 
+These rules ensure queries are high-performing, maintainable, and explicitly clear.
+
+* Avoid SELECT *: Always explicitly list the columns you need. This prevents fetching unnecessary data (improving performance), avoids naming conflicts if tables change, and clarifies exactly what data is being returned.
+
+* Use Explicit JOIN Syntax: Use INNER JOIN, LEFT JOIN, RIGHT JOIN, or FULL JOIN.
+
+* Use Table and Column Aliases. Always assign an alias to every table in a query with multiple tables (e.g., FROM table_name AS t1).
+
+* Always qualify every column with its table alias (e.g., SELECT t1.column_name).
+
+* Always use the AS keyword when aliasing columns or tables for clarity.
+
+* Use Common Table Expressions (CTEs): Use WITH clauses instead of nesting subqueries. CTEs significantly improve readability by breaking down complex logic into sequential, named steps.
 
 ### Technology
 
