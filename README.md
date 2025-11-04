@@ -210,6 +210,198 @@ Partitioing also means that distrobuted systems like Spark can handle the data m
 
 ## Data Modelling
 
+Data modelling is the process of designing how data is structured, stored, and related within a system. As a data engineer, it involves defining entities, attributes, and relationships to create efficient, scalable, and consistent database or data warehouse schemas. Good data models ensure data integrity, support analytics and reporting needs, and make it easier for teams to extract reliable insights from the data.
+
+
+
+### Dimensional data modelling (denormalisation & the Kimball approach)
+
+⚙️ Best Practices
+
+* Always define grain first as it drives everything else
+
+* Prefer denormalised dimensions for simplicity and performance.
+
+* Keep the model extensible (graceful extensions).
+
+* Use conformed dimensions for cross-domain reporting.
+
+* Maintain data quality and consistency through surrogate keys and controlled ETL processes.
+
+Below is a distilled summary of the “Dimensional Modeling Techniques” page from the [Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/) — it outlines the core concepts, best practices, and advanced patterns that underpin dimensional models in data warehousing. 
+
+
+1. Foundations / Fundamental Concepts
+
+The page emphasizes starting by gathering both business requirements and data realities — i.e. you need to align what the business needs to analyse with what the data sources can actually provide. 
+
+To do this you would hold collaborative dimensional modeling workshops (with business stakeholders and domain experts) to refine and validate your design. 
+
+Kimball define a Four-Step Dimensional Design process as detailed below.
+
+Key concepts introduced:
+
+- Business processes — what events or operations will be captured (e.g. orders, payments).
+
+- Grain — the level of detail (i.e. the “atomic” level) that your fact records will represent.
+
+- Dimensions — are descriptive context (who, what, where, when, how).
+
+- Facts — the numeric measurements or metrics associated with the business process.
+
+Star schemas & OLAP cubes — dimensional models are often implemented in star schema layout (fact in center, dimensions around), and can support OLAP-style analysis.
+
+           DimDate
+              |
+DimCustomer — FactSales — DimProduct
+              |
+           DimStore
+
+
+
+
+
+Graceful extensions — ability to evolve and extend the model over time without massive rework. 
+Kimball Group
+
+2. Fact Table Techniques
+
+This section enumerates various patterns and considerations for fact tables: 
+Kimball Group
+
+Fact table structure — core layout and linking to dimensions.
+
+Additive, semi-additive, non-additive facts — whether measures can be summed across all dimensions (e.g. sales is additive, inventory balance is semi-additive).
+
+Handling nulls in fact tables.
+
+Conformed facts — ensuring facts align across multiple fact tables or subject areas.
+
+Variants of facts:
+
+Transaction fact tables (each event recorded).
+
+Periodic snapshot fact tables (e.g. daily/monthly aggregates).
+
+Accumulating snapshot fact tables (e.g. tracking a process with start and end milestones).
+
+Factless fact tables (no numeric measure, just capturing an event or relationship).
+
+Aggregated fact tables / cubes and consolidated fact tables for performance optimizations. 
+Kimball Group
+
+3. Dimension Table Techniques
+
+This part addresses how to design the descriptive side of the schema: 
+Kimball Group
+
+Dimension structure, including use of surrogate keys (artificial integer keys) rather than relying on natural keys.
+
+Differences between natural, durable, and supernatural keys.
+
+Drill down (navigating hierarchical levels).
+
+Degenerate dimensions (when a dimension attribute resides in the fact table).
+
+Denormalized / flattened dimensions to reduce joins.
+
+Supporting multiple hierarchies in a dimension.
+
+Use of flags and indicator attributes (e.g. is_active, is_preferred).
+
+Null attributes (how to represent missing or unknown descriptive detail).
+
+Special dimension types:
+
+Calendar date / time dimensions.
+
+Role-playing dimensions (same dimension used for different roles, e.g. Order Date vs Ship Date).
+
+Junk dimensions (grouping miscellaneous flags/attributes).
+
+Snowflaked dimensions / outrigger dimensions (less common, normalized sub-dimensions). 
+Kimball Group
+
+4. Integration via Conformed Dimensions
+
+A key principle is conformed dimensions: dimensions shared across multiple fact tables, ensuring consistency and enabling cross-subject “drill across.” 
+Kimball Group
+
+Concepts like shrunken rollups, drilling across, bus architecture (data warehouse bus), and bus matrix are introduced as architectural tools to manage integration across domains. 
+Kimball Group
++1
+
+Also mentions how to maintain consistency across subject areas (the “value chain”). 
+Kimball Group
+
+5. Slowly Changing Dimensions (SCD)
+
+The page covers various techniques for managing dimension attribute changes over time: 
+Kimball Group
+
+Type 0: retain original value (do nothing)
+
+Type 1: overwrite with new value (loses history)
+
+Type 2: add a new row (full historical trace)
+
+Type 3: add a new attribute (partial history)
+
+Type 4: mini-dimension (offload historical attributes)
+
+Type 5, 6, 7: hybrid or combined approaches (mixing strategies) 
+Kimball Group
+
+6. Dimension Hierarchy Techniques
+
+Techniques for handling hierarchies in dimensions:
+
+Fixed-depth positional hierarchies (e.g. levels known ahead).
+
+Slightly ragged / variable-depth hierarchies (some branches shorter).
+
+Ragged hierarchies (variable depth, “holes” in levels). 
+Kimball Group
+
+7. Advanced Fact Table Techniques
+
+This section touches on more sophisticated modeling patterns for fact tables: 
+Kimball Group
+
+Using surrogate key in fact tables.
+
+Centipede fact tables (a kind of fan-out structure).
+
+Treating numeric values as attributes vs facts.
+
+Lag / duration facts (e.g. time between events).
+
+Header/line fact tables (for hierarchical facts, e.g. invoices + line items).
+
+Allocated facts (e.g. allocating overheads) and profit & loss tables.
+
+Handling multiple currencies, multiple units of measure.
+
+Year-to-date facts, multipass SQL to avoid fact-to-fact joins.
+
+Timespan tracking, late arriving facts. 
+Kimball Group
+
+8. Advanced Dimension Table Techniques
+
+Finally, the page mentions advanced patterns for dimensions: 
+Kimball Group
+
+Dimension-to-dimension table joins (dimension relationships).
+
+Multivalued dimensions and bridge tables (e.g. a fact could be associated with multiple members of a dimension).
+
+Behavior tag time series, behavior study group, aggregated facts as dimension attributes.
+
+Dynamic value banding, text comments, multiple time zones, measure type dimensions, step dimensions, hot-swappable dimensions, abstract / generic dimensions, audit dimensions, and late arriving dimensions.
+
+### Other types of modelling & one big table
+
 ## Batching and Streaming
 
 ## Data engineering techniques
