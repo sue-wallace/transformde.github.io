@@ -4,10 +4,6 @@ Welcome to X and the data engineering playbook! The purpose of this pack is to a
 
 ## Contents 
 
-X's Structure
-
-The general X structure can be found in Bamboo under people > org chart. 
-
 [Learning Pathways](#Learning-Pathways)
 
 [Data Engineer Consulting Skills](#Data-Engineer-Consulting-Skills)
