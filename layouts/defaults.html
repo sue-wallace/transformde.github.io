@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 8px 0;
+      transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #ffffff;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Contents</h2>
+    <a href="#introduction">Introduction</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+</html>
