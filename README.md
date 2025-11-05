@@ -1,8 +1,3 @@
----
-layout: default
-title: My GitHub Pages Site
----
-
 # Data engineering playbook
 
 Add X logo here
