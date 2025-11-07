@@ -354,7 +354,7 @@ Key concepts introduced:
 - Star schemas & OLAP cubes — dimensional models are often implemented in star schema layout (fact in center, dimensions around) and can support OLAP-style analysis.
 
 
-![FactsDims](facts_dims.png)
+![FactsDims](images/facts_dims.png)
 
 
 - Graceful extensions — ability to evolve and extend the model over time without massive rework. 
@@ -387,7 +387,7 @@ This part addresses how to design the descriptive side of the schema through dim
 
 Dimension structure should include the use of surrogate keys (artificial integer keys) rather than relying on natural keys.
 
-![Dimention detail](dim_detail.png)
+![Dimention detail](images/dim_detail.png)
 
 Special dimension types:
 
@@ -436,7 +436,7 @@ Normal Forms (The Rules)
 
 Normalisation is achieved by following a series of rules called Normal Forms. The first three are the most common
 
-![Normal Forms](normal_forms.png)
+![Normal Forms](images/normal_forms.png)
 
 
 ### One big table
